@@ -6,6 +6,11 @@ ruby "3.0.0"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
+  gem 'rspec-rails' # for testing with rspec
+  gem 'factory_bot_rails' # for creating test data on test DB 
+  gem 'simplecov' # for checking coverage
+  gem 'database_cleaner-active_record' # for cleaning DB after the test
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 

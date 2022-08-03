@@ -6,6 +6,12 @@ class AdminsController < ApplicationController
     @admins = Admin.all
   end
 
+  def typeahead 
+    key=params[:input]
+    @search=Admin.search(key)
+    render json: @search
+  end
+
   # GET /admins/1 or /admins/1.json
   def show
   end
